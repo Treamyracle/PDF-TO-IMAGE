@@ -30,9 +30,10 @@ def convert_pdf():
         page = doc.load_page(page_num)
         pix = page.get_pixmap(dpi=150)  # render ke image, DPI = kualitas
 
-        img_io = io.BytesIO()
-        pix.save(img_io, format="PNG")
+        img_bytes = pix.tobytes("png")
+        img_io = io.BytesIO(img_bytes)
         img_io.seek(0)
+
 
         images.append((f"page_{page_num+1}.png", img_io))
 
