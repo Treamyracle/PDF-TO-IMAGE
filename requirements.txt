@@ -2,6 +2,3 @@ Flask
 PyMuPDF
 Flask-Cors
 gunicorn
-pymupdf
-pytesseract
-opencv-python-headless

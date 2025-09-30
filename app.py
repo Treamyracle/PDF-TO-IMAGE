@@ -8,7 +8,6 @@ CORS(app)
 # Register blueprints
 app.register_blueprint(home_bp)
 app.register_blueprint(convert_bp)
-app.register_blueprint(ocr_bp)
 
 # Penting untuk Vercel: jangan pakai app.run()
 # if __name__ == "__main__":
